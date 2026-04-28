@@ -1,3 +1,4 @@
+
 def add(a, b):
     return a + b
 
@@ -14,3 +15,6 @@ def divide(a, b):
 
 def cube(a):
     return a ** 3
+
+def square(a):
+    return a * a
