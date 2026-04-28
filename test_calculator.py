@@ -1,5 +1,5 @@
 import unittest
-from logic import add, subtract, multiply, divide
+from logic import add, subtract, multiply, divide, cube
 
 class TestCalculator(unittest.TestCase):
 
@@ -25,5 +25,11 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             divide(10, 0)
 
-if __name__ == "__main__":
+    def test_cube(self):
+        self.assertEqual(cube(2), 8)
+        self.assertEqual(cube(-3), -27)
+        self.assertEqual(cube(0), 0)
+        self.assertEqual(cube(1), 1)
+
+if __name__ == __main__:
     unittest.main()
